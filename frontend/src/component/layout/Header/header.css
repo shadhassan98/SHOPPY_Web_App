@@ -1,0 +1,179 @@
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  max-height: 80px;
+  width: 99vw;
+  position: relative;
+  /* left: 80px; */
+}
+
+/* Style the links inside the navigation bar */
+.left a {
+  float: left;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.left a:hover {
+  background-color: lightblue;
+  color: whitesmoke;
+}
+
+/* Style the "active" element to highlight the current page */
+.left a.active {
+  background-color: blue;
+  color: white;
+}
+.topnav input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+/* Style the links inside the navigation bar */
+.right a {
+  float: right;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.right a:hover {
+  background-color: lightblue;
+  color: whitesmoke;
+}
+
+/* Style the "active" element to highlight the current page */
+.right a.active {
+  background-color: blue;
+  color: white;
+}
+/* Style the search box inside the navigation bar */
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+/* @media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav input[type="text"],
+  .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type="text"] {
+    border: 1px solid #ccc;
+  }
+} */
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+
+.searchBox {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.searchbox > input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  background-color: #fff;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.searchbox > input[type="submit"] {
+  float: right;
+  border-radius: 0%;
+  background-color: tomato;
+  padding: 1vmax;
+  width: 6vmax;
+  height: 2vmax;
+  font: 300 1vmax "Roboto";
+  color: tomato;
+  transition: all 0.5s;
+}
+
+.searchbox > input[type="submit"]:hover {
+  background-color: red;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
+}
+
+.speedDial {
+  position: fixed;
+  right: 3vmax;
+  top: 3vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
